@@ -163,6 +163,17 @@ a { color: inherit; text-decoration: none; }
 .capability-list article > span { color: #777c73; font: 500 10px/1 "DM Mono", monospace; }
 .capability-list h3 { margin: 0; font-size: 24px; font-weight: 500; letter-spacing: -.03em; }
 .capability-list p { margin: 0; color: #aeb2aa; line-height: 1.65; max-width: 640px; }
+
+.toolkit { background: #f5f4f0; }
+.tool-logo-grid { display: grid; grid-template-columns: repeat(4, 1fr); margin-top: 72px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
+.tool-logo-card { min-height: 124px; display: flex; align-items: center; gap: 18px; padding: 22px; border-right: 1px solid var(--line); border-bottom: 1px solid var(--line); transition: background .2s ease, color .2s ease; }
+.tool-logo-card:hover { background: var(--ink); color: white; }
+.tool-logo-card svg { width: 34px; height: 34px; flex: 0 0 auto; fill: currentColor; }
+.tool-logo-card strong, .tool-logo-card div > span { display: block; }
+.tool-logo-card strong { font-size: 15px; font-weight: 650; }
+.tool-logo-card div > span { margin-top: 6px; color: var(--muted); font: 500 9px/1.2 "DM Mono", monospace; text-transform: uppercase; letter-spacing: .07em; }
+.tool-logo-card:hover div > span { color: #b7bbb3; }
+.tool-wordmark { width: 58px; flex: 0 0 auto; font: 700 11px/1 "DM Mono", monospace; letter-spacing: -.06em; }
 .toolkit { border-bottom: 1px solid var(--line); }
 .toolkit h2 { max-width: 700px; }
 .tool-groups { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0; margin-top: 70px; border-top: 1px solid var(--line); border-left: 1px solid var(--line); }
@@ -239,6 +250,7 @@ footer p:last-child { justify-self: end; }
   .opensource-offer { grid-column: 1; }
   .opensource-offer-head { grid-template-columns: 1fr; gap: 38px; }
   .oss-logo-grid { grid-template-columns: repeat(2, 1fr); }
+  .tool-logo-grid { grid-template-columns: repeat(2, 1fr); }
   .product-grid-react, .blog-grid { grid-template-columns: 1fr; }
   .blog-list { grid-template-columns: 1fr; }
   .blog-hero, .article-header { min-height: 620px; }
@@ -268,6 +280,7 @@ footer p:last-child { justify-self: end; }
   .tool-groups { grid-template-columns: 1fr; }
   .org-grid { grid-template-columns: 1fr; }
   .oss-logo-grid { grid-template-columns: 1fr; }
+  .tool-logo-grid { grid-template-columns: 1fr; }
   .contact-actions { align-items: stretch; }
 }
 
